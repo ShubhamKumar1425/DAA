@@ -15,13 +15,11 @@ int find(int i) {
         parent[i] = find(parent[i]);
     return parent[i];
 }
-
 void unionSets(int u, int v) {
     int rootU = find(u);
     int rootV = find(v);
     parent[rootU] = rootV;
 }
-
 /* Comparator for qsort: first by weight, then by u, then by v */
 int cmpEdge(const void *a, const void *b) {
     struct Edge *e1 = (struct Edge *)a;
@@ -30,7 +28,6 @@ int cmpEdge(const void *a, const void *b) {
     if (e1->u != e2->u) return e1->u - e2->u;
     return e1->v - e2->v;
 }
-
 int main() {
     int n, m, i, mstCount = 0, totalWeight = 0;
 
@@ -43,7 +40,6 @@ int main() {
     for (i = 0; i < m; i++) {
         scanf("%d %d %d", &edges[i].u, &edges[i].v, &edges[i].w);
     }
-
     /* Initialize DSU */
     for (i = 1; i <= n; i++)
         parent[i] = i;
@@ -63,7 +59,6 @@ int main() {
             totalWeight += w;
         }
     }
-
     /* Print MST edges */
     printf("\nSelected edges in the Minimum Spanning Tree:\n");
     printf("Edge\t\tCost\n");
@@ -71,6 +66,6 @@ int main() {
         printf("%d--%d\t\t%d\n", mst[i].u, mst[i].v, mst[i].w);
 
     printf("Total Weight of the Spanning Tree: %d\n", totalWeight);
-
     return 0;
 }
+
