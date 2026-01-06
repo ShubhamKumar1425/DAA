@@ -69,7 +69,6 @@ int main() {
         }
         printf("\n");
     }
-   
     int u, v;
     printf("\nEnter the source and destination vertex: ");
     scanf("%d %d", &u, &v);
