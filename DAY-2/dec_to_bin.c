@@ -7,7 +7,6 @@ void toBinary(int num, char binary[], int index) {
     binary[index] = (num % 2) + '0';
     toBinary(num / 2, binary, index - 1);
 }
-
 void DecToBin(int n, char inputFile[], char outputFile[]) {
     FILE *fin = fopen(inputFile, "r");
     FILE *fout = fopen(outputFile, "w");
@@ -18,7 +17,6 @@ void DecToBin(int n, char inputFile[], char outputFile[]) {
         printf("Error: Cannot open file.\n");
         exit(1);
     }
-
     for (i = 0; i < n && fscanf(fin, "%d", &num) == 1; i++) {
         for (int j = 0; j < BITS; j++) binary[j] = '0';
         binary[BITS] = '\0';
@@ -61,6 +59,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
 
 
 
