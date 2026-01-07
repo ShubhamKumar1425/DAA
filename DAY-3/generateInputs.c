@@ -8,14 +8,12 @@ void generateAscending(const char *filename, int start, int n) {
         fprintf(fp, "%d ", start + i);
     fclose(fp);
 }
-
 void generateDescending(const char *filename, int start, int n) {
     FILE *fp = fopen(filename, "w");
     for (int i = 0; i < n; i++)
         fprintf(fp, "%d ", start - i);
     fclose(fp);
 }
-
 void generateRandom(const char *filename, int n) {
     FILE *fp = fopen(filename, "w");
     srand(time(0));
@@ -34,3 +32,4 @@ int main() {
     printf("Input files generated successfully.\n");
     return 0;
 }
+
