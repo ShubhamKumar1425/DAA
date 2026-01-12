@@ -12,6 +12,6 @@ int main() {
         int random_num = (rand() % (UPPER - LOWER + 1)) + LOWER;
         printf("%d\n", random_num);
     }
-
     return 0;
 }
+
