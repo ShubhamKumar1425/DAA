@@ -53,6 +53,5 @@ int main() {
 
     printf("\nLCS: %s\n", lcs);
     printf("LCS Length: %d\n", L[m][n]);
-
     return 0;
 }
