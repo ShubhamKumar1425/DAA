@@ -18,6 +18,6 @@ int main() {
     for (int i = 0; i < SIZE; i++) {
         printf("%d ", numbers[i]);
     }
-
     return 0;
 }
+
