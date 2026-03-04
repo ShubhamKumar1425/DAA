@@ -32,4 +32,3 @@ int main() {
     printf("Input files generated successfully.\n");
     return 0;
 }
-
