@@ -13,6 +13,7 @@ long long get_time_ns() {
     QueryPerformanceCounter(&counter);
     return (long long)(counter.QuadPart * 1e9 / freq.QuadPart);
 }
+
 #else
 long long get_time_ns() {
     struct timespec ts;
