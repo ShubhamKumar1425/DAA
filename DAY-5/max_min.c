@@ -10,6 +10,7 @@ void maxmin1(int a[], int s, int e) {
     printf("maxmin1 -> Max: %d, Min: %d\n", max, min);
 }
 
+
 // ii) maxmin2: return pointer to array where max and min are stored
 int* maxmin2(int a[], int s, int e) {
     static int res[2];
