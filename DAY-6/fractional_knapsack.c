@@ -12,7 +12,6 @@ typedef struct {
 static void swap(ITEM *a, ITEM *b) {
     ITEM t = *a; *a = *b; *b = t;
 }
-
 static void heapify(ITEM arr[], int n, int i) {
     int largest = i;
     int l = 2*i + 1, r = 2*i + 2;
