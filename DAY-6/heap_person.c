@@ -11,6 +11,7 @@ struct person {
     int weight; // in pounds
 };
 
+
 struct person *people = NULL;
 struct person *heap = NULL;
 int n = 0;        
