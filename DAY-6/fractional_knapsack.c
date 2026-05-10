@@ -78,6 +78,7 @@ int main(void) {
             break;
         }
     }
+    
 
     printf("\nItem No   \tprofit  \tWeight    \t\tAmount to be taken\n");
     for (int i = 0; i < n; ++i) {
