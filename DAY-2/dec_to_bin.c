@@ -8,6 +8,7 @@ void toBinary(int num, char binary[], int index) {
     toBinary(num / 2, binary, index - 1);
 }
 
+
 void DecToBin(int n, char inputFile[], char outputFile[]) {
     FILE *fin = fopen(inputFile, "r");
     FILE *fout = fopen(outputFile, "w");
