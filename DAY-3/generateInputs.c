@@ -8,6 +8,7 @@ void generateAscending(const char *filename, int start, int n) {
         fprintf(fp, "%d ", start + i);
     fclose(fp);
 }
+
 void generateDescending(const char *filename, int start, int n) {
     FILE *fp = fopen(filename, "w");
     for (int i = 0; i < n; i++)
