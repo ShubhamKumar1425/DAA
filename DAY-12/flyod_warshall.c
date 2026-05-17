@@ -2,6 +2,7 @@
 #define INF 9999
 #define MAX 10
 
+
 int n;
 int dist[MAX][MAX], next[MAX][MAX];
 
