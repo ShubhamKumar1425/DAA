@@ -5,7 +5,6 @@
 int n;
 int dist[MAX][MAX], next[MAX][MAX];
 
-
 void printPath(int u, int v) {
     if (next[u][v] == -1) {
         printf("No path\n");
