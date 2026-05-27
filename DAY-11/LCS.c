@@ -4,7 +4,6 @@
 int max(int a, int b) {
     return (a > b) ? a : b;
 }
-
 int main() {
     char X[100], Y[100];
     int L[101][101];
